@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" href="static/css/style.css">
+    
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+    
+    <!--  To use the Template we using Ninja -->
+    {% block title %}
+        <title> Home Page </title>
+    {% endblock %}
+
+</head>
+<body>
+
+    <!-- ===== NAVBAR ====== -->
+
+    <nav class="navbar navbar-expand-lg navbar-light bg-light container mt-3 rounded-4 px-3 py-2">
+      <div class="container-fluid">
+        <a class="navbar-brand" href="#">Blog Application</a>
+        <button
+          class="navbar-toggler"
+          type="button"
+          data-mdb-toggle="collapse"
+          data-mdb-target="#navbarTogglerDemo02"
+          aria-controls="navbarTogglerDemo02"
+          aria-expanded="false"
+          aria-label="Toggle navigation"
+        >
+          <i class="fas fa-bars"></i>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarTogglerDemo02">
+          <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+            <li class="nav-item">
+              <a class="nav-link active" aria-current="page" href="/">Home</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="/blog">Blogs</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link disabled"
+                >Developed using FLASK</a
+              >
+            </li>
+          </ul>
+          <form class="d-flex w-auto">
+            
+            <button
+              class="btn btn-success"
+              type="button"
+              data-mdb-ripple-color="dark"
+            >
+              Add new Blog
+            </button>
+          </form>
+        </div>
+      </div>
+    </nav>
+
+
+    <!-- ===== END NAVBAR ===== -->
+
+
+    
+    {% block body %}
+        <!--<h1 class='container'> Hello Hassan, HOME PAGE</h1>-->
+
+        <!--  ===== HERO =====  -->
+        <div class="p-4 shadow-4 rounded-3 container mt-5" style="background-color: hsl(0, 0%, 94%);">
+            <h2>Technology Blog Application</h2>
+            <p>
+              This Application is used for Adding your Blogs Related to Technology. Which Invloves New Advancements, Trending Technologies, Events, Hacathons, New Features, Problem Solving Questions, Projects, Comunity
+            </p>
+        
+            <hr class="my-4" />
+        
+            <p>
+              It uses utility classes for typography and spacing to space content  out within the
+              larger container.
+            </p>
+            <a type="button" class="btn btn-primary" href='/blog'>
+              Explore Blogs
+            </a>
+          </div>
+ 
+        <!--   END SECTION  -->
+    {% endblock %}
+
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.8/dist/umd/popper.min.js" integrity="sha384-I7E8VVD/ismYTF4hNIPjVp/Zjvgyol6VFvRkX/vR+Vc4jQkC+hVqc2pM8ODewa9r" crossorigin="anonymous"></script>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.min.js" integrity="sha384-BBtl+eGJRgqQAUMxJ7pMwbEyER4l1g+O15P+16Ep7Q9Q+zqX6gSbd85u4mG4QzX+" crossorigin="anonymous"></script>
+</body>
+</html>
